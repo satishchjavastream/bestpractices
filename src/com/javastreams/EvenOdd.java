@@ -1,3 +1,5 @@
+package com.javastreams;
+
 import java.time.Clock;
 import java.time.Instant;
 import java.util.Arrays;

@@ -1,6 +1,8 @@
+package com.javalamdba;
+
 public class TestThreads {
     public static void main(String[] args) {
-      /*  Runnable r = new MyRun();
+      /*  Runnable r = new com.javalamdba.MyRun();
         Thread t = new Thread(r);
         t.start();
 

@@ -1,3 +1,5 @@
+package com.javalamdba;
+
 public class MyRun implements Runnable{
 
     @Override

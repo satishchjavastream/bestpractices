@@ -1,3 +1,5 @@
+package com.javalamdba;
+
 public class TestStringLength {
     public static void main(String[] args) {
 

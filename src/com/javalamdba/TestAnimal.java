@@ -1,3 +1,5 @@
+package com.javalamdba;
+
 /* Lambda expression example */
 public class TestAnimal {
     public static void main(String[] args) {

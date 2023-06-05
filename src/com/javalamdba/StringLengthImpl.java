@@ -1,3 +1,5 @@
+package com.javalamdba;
+
 public class StringLengthImpl implements StringLength{
 
     @Override

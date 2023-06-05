@@ -1,3 +1,5 @@
+package com.javalamdba;
+
 public class TestSquareRoot {
     public static void main(String[] args) {
         SquareRoot squareRoot = new SquareRootImpl();

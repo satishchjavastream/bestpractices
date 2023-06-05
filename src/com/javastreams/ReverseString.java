@@ -1,3 +1,5 @@
+package com.javastreams;
+
 import java.util.Collections;
 import java.util.stream.Collectors;
 
