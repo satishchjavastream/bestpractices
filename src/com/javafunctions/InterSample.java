@@ -1,2 +1,5 @@
-package com.javafunctions;public interface InterSample {
+package com.javafunctions;
+
+public interface InterSample {
+    public Sample get();
 }
