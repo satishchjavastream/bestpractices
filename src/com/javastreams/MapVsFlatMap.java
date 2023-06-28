@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class MapVsFlatMap {
     public static void main(String[] args) {
 
-        List<Customer> customerList = CustomerDatabse.getAll();
+        List<Customer> customerList = Databse.getAll();
         System.out.println("Get all the customers :"+customerList);
 
         // Map is used Data transformation , OneToOne mapping , for-loop-data  List<Stream> -> List<Stream>
