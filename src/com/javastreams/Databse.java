@@ -43,4 +43,16 @@ public class Databse {
         return  map;
     }
 
+    public static List<EmployeeGrad> getEmp(){
+
+        return Stream.of(
+                        new EmployeeGrad(101,"Sam","C",10000),
+                        new EmployeeGrad(102,"Ramesh","B",15000),
+                        new EmployeeGrad(103,"Rajesh","B",20000),
+                        new EmployeeGrad(104,"Pooja","A",25000),
+                        new EmployeeGrad(105,"Jhon","A",30000),
+                        new EmployeeGrad(106,"Satish","A",35000))
+                .collect(Collectors.toList());
+    }
+
 }

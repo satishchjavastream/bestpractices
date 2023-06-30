@@ -1,6 +1,8 @@
 package com.javastreams;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class MapVsFlatMap {
@@ -10,9 +12,11 @@ public class MapVsFlatMap {
         System.out.println("Get all the customers :"+customerList);
 
         // Map is used Data transformation , OneToOne mapping , for-loop-data  List<Stream> -> List<Stream>
-        List<String> emails= customerList.stream()
-                .map(customer -> customer.getEmail())
-                .collect(Collectors.toList());
+        List<String> emails = new ArrayList<>();
+        for (Customer customer1 : customerList) {
+            Optional<String> email = customer1.getEmail();
+            emails.add(email.get());
+        }
         System.out.println("Customer email ids :"+emails);
 
         List<List<String>> phoneNumbers = customerList.stream()
