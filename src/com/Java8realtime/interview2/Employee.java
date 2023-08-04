@@ -1,36 +1,19 @@
-package com.Java8realtime.interview1;
+package com.Java8realtime.interview2;
 
 public class Employee {
-    int id;
+    private String name;
 
-    String name;
+    private Integer age;
 
-    int age;
+    private String city;
 
-    String gender;
+    private Department department;
 
-    String department;
-
-    int yearOfJoining;
-
-    double salary;
-
-    public Employee(int id, String name, int age, String gender, String department, int yearOfJoining, double salary) {
-        this.id = id;
+    public Employee(String name, Integer age, String city, Department department) {
         this.name = name;
         this.age = age;
-        this.gender = gender;
+        this.city = city;
         this.department = department;
-        this.yearOfJoining = yearOfJoining;
-        this.salary = salary;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -41,56 +24,27 @@ public class Employee {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
-    public String getGender() {
-        return gender;
+    public String getCity() {
+        return city;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
         this.department = department;
-    }
-
-    public int getYearOfJoining() {
-        return yearOfJoining;
-    }
-
-    public void setYearOfJoining(int yearOfJoining) {
-        this.yearOfJoining = yearOfJoining;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender='" + gender + '\'' +
-                ", department='" + department + '\'' +
-                ", yearOfJoining=" + yearOfJoining +
-                ", salary=" + salary +
-                '}';
     }
 }

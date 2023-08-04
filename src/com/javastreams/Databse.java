@@ -55,4 +55,16 @@ public class Databse {
                 .collect(Collectors.toList());
     }
 
+    public static List<Person> getPerson(){
+
+        return Stream.of(
+                        new Person("Sam",28),
+                        new Person("Ramesh",50),
+                        new Person("Rajesh",50),
+                        new Person("Pooja",45),
+                        new Person("Jhon",45),
+                        new Person("Satish",47))
+                .collect(Collectors.toList());
+    }
+
 }
